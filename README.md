@@ -1,7 +1,7 @@
 # **MasterLapse | Timelapse PowerShell Application**
 
 
-![image](https://github.com/user-attachments/assets/e96528af-d0fe-4fed-8b47-41934bd63daa)
+![image](https://github.com/user-attachments/assets/8f15e59c-3ef2-4ca7-8a1e-0c2e783e07b0)
 
 
 
