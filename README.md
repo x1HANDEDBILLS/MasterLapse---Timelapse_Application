@@ -1,5 +1,10 @@
 # **MasterLapse | Timelapse PowerShell Application**
 
+
+![image](https://github.com/user-attachments/assets/e96528af-d0fe-4fed-8b47-41934bd63daa)
+
+
+
 ## **Overview**
 This Timelapse PowerShell Script is an automated solution for capturing images from a PC and webcam at set intervals and turning them into a timelapse video. It runs in the background, manages files automatically, and even restarts itself if necessary. For Windows 10/11
 
