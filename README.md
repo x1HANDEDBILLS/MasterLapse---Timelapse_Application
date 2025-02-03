@@ -86,7 +86,7 @@ This Timelapse PowerShell Script is an automated solution for capturing images f
 
 ---
 
-## ⚠️ **WARNING:**
+##  **WARNING:**
 - The window may appear **unresponsive** during video creation and video merging. This is a normal **temporary freeze** until the process completes.
 - **Avoid capturing more than 2000 images per video** to prevent excessive memory usage and potential script crashes.
 - **Keep the number of merged videos low** to avoid script instability.
