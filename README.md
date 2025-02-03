@@ -101,7 +101,7 @@ This Timelapse PowerShell Script is an automated solution for capturing images f
 3. **Extract the Files:**
    - Locate the downloaded .zip file and extract it to your desired location.
 4. **Run the Installer:**
-   - Find **Timelapse Installer.exe** inside the extracted folder.
+   - Find **Masterlapse Installer.exe** inside the extracted folder.
    - Double-click to launch it.
    - Follow all prompts—no changes are necessary during installation.
    - Open the Application via Desktop Shortcut.
