@@ -1,0 +1,41 @@
+[Setup]
+AppName=Masterlapse
+AppVersion=1.0.0
+DefaultDirName={commonpf}\Timelapse
+DefaultGroupName=Timelapse
+OutputDir={userdesktop}
+OutputBaseFilename=Masterlapse Installer
+SetupIconFile=C:\Users\user\Desktop\Icon.ico
+Compression=lzma
+SolidCompression=yes
+PrivilegesRequired=admin
+
+[Files]
+Source: "C:\Users\user\Desktop\InstallTimeLapseTask.ps1"; DestDir: "{app}"; Flags: overwritereadonly
+Source: "C:\Users\user\Desktop\CreateTimeLapseTasks.ps1"; DestDir: "{app}"; Flags: overwritereadonly
+Source: "C:\Users\user\Desktop\TimeLapse-v1.0.0.ps1";     DestDir: "{app}"; Flags: overwritereadonly
+Source: "C:\Users\user\Desktop\Icon.ico";                DestDir: "{app}"; Flags: overwritereadonly
+
+[Dirs]
+Name: "{code:GetTimelapseUserDir|\Images}"
+Name: "{code:GetTimelapseUserDir|\Videos}"
+
+[Icons]
+Name: "{userdesktop}\Masterlapse"; \
+    Filename: "schtasks.exe"; \
+    Parameters: "/run /tn RunTimelapseAdminScript"; \
+    WorkingDir: "{app}"; \
+    IconFilename: "{app}\Icon.ico"; \
+    IconIndex: 0; \
+    Flags: runminimized
+
+[Run]
+Filename: "powershell.exe"; \
+    Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\InstallTimeLapseTask.ps1"""; \
+    Flags: runhidden
+
+[Code]
+function GetTimelapseUserDir(Param: String): string;
+begin
+  Result := GetEnv('USERPROFILE') + '\Timelapse' + Param;
+end;
