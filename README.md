@@ -110,7 +110,9 @@ This Timelapse PowerShell Script is an automated solution for capturing images f
    - Double-click to launch it.
    - Follow all prompts—no changes are necessary during installation.
    - Open the Application via Desktop Shortcut.
+   - You can Delete the downloaded ".zip" and "extracted" folders now.
 
+ 
 ### **What the Installer Does**
 - Ensures it is running in Windows PowerShell 5.1.
 - Requests Administrator privileges if needed.
